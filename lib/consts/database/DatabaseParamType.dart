@@ -1,0 +1,25 @@
+class DatabasePropertyType {
+	static const String
+		INT = "INT",
+		INTEGER = "INTEGER",
+		TINYINT = "TINYINT",
+		SMALLINT = "SMALLINT",
+		MEDIUMINT = "MEDIUMINT",
+		BIGINT = "BIGINT",
+		UNSIGNEDBIGINT = "UNSIGNED BIG INT",
+		INT2 = "INT2",
+		INT8 = "INT8",
+		TEXT = "TEXT",
+		CHARACTER_20 = "CHARACTER(20)",
+		VARCHAR_255 = "VARCHAR(255)",
+		REAL = "REAL",
+		DOUBLE = "DOUBLE",
+		FLOAT = "FLOAT",
+		NUMERIC = "NUMERIC",
+		BOOLEAN = "BOOLEAN",
+		DATE = "DATE",
+		DATETIME = "DATETIME",
+		NULL = "NULL",
+		BLOB = "BLOB"
+	;
+}
