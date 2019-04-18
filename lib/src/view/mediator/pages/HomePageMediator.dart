@@ -8,8 +8,8 @@ import 'package:counter_recorder/src/model/vos/CounterVO.dart';
 import 'package:counter_recorder/src/view/components/pages/HomePage.dart';
 import 'package:framework/framework.dart';
 
-class HomePageMediator extends Mediator {
-
+class HomePageMediator extends Mediator
+{
 	static const String NAME = "HomePageMediator";
 
 	static const String SET_COUNTER = "note_home_screen_mediator_set_counter";

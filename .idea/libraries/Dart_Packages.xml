@@ -5,6 +5,7 @@
         <entry key="collection">
           <value>
             <list>
+              <option value="$PROJECT_DIR$/../../../../SDKs/Flutter/.pub-cache/hosted/pub.dartlang.org/collection-1.14.11/lib" />
               <option value="$PROJECT_DIR$/../../../../SDKs/Flutter/.pub-cache/hosted/pub.dartlang.org/collection-1.14.6/lib" />
             </list>
           </value>
@@ -26,6 +27,7 @@
         <entry key="meta">
           <value>
             <list>
+              <option value="$PROJECT_DIR$/../../../../SDKs/Flutter/.pub-cache/hosted/pub.dartlang.org/meta-1.1.6/lib" />
               <option value="$PROJECT_DIR$/../../../../SDKs/Flutter/.pub-cache/hosted/pub.dartlang.org/meta-1.1.5/lib" />
             </list>
           </value>
@@ -33,7 +35,7 @@
         <entry key="path">
           <value>
             <list>
-              <option value="$PROJECT_DIR$/../../../../SDKs/Flutter/.pub-cache/hosted/pub.dartlang.org/path-1.6.0/lib" />
+              <option value="$PROJECT_DIR$/../../../../SDKs/Flutter/.pub-cache/hosted/pub.dartlang.org/path-1.6.2/lib" />
             </list>
           </value>
         </entry>
@@ -61,6 +63,7 @@
         <entry key="typed_data">
           <value>
             <list>
+              <option value="$PROJECT_DIR$/../../../../SDKs/Flutter/.pub-cache/hosted/pub.dartlang.org/typed_data-1.1.6/lib" />
               <option value="$PROJECT_DIR$/../../../../SDKs/Flutter/.pub-cache/hosted/pub.dartlang.org/typed_data-1.1.5/lib" />
             </list>
           </value>
@@ -68,6 +71,7 @@
         <entry key="vector_math">
           <value>
             <list>
+              <option value="$PROJECT_DIR$/../../../../SDKs/Flutter/.pub-cache/hosted/pub.dartlang.org/vector_math-2.0.8/lib" />
               <option value="$PROJECT_DIR$/../../../../SDKs/Flutter/.pub-cache/hosted/pub.dartlang.org/vector_math-2.0.6/lib" />
             </list>
           </value>
@@ -75,14 +79,18 @@
       </option>
     </properties>
     <CLASSES>
+      <root url="file://$PROJECT_DIR$/../../../../SDKs/Flutter/.pub-cache/hosted/pub.dartlang.org/collection-1.14.11/lib" />
       <root url="file://$PROJECT_DIR$/../../../../SDKs/Flutter/.pub-cache/hosted/pub.dartlang.org/collection-1.14.6/lib" />
       <root url="file://$PROJECT_DIR$/../../../../SDKs/Flutter/.pub-cache/hosted/pub.dartlang.org/cupertino_icons-0.1.2/lib" />
       <root url="file://$PROJECT_DIR$/../../../../SDKs/Flutter/.pub-cache/hosted/pub.dartlang.org/meta-1.1.5/lib" />
-      <root url="file://$PROJECT_DIR$/../../../../SDKs/Flutter/.pub-cache/hosted/pub.dartlang.org/path-1.6.0/lib" />
+      <root url="file://$PROJECT_DIR$/../../../../SDKs/Flutter/.pub-cache/hosted/pub.dartlang.org/meta-1.1.6/lib" />
+      <root url="file://$PROJECT_DIR$/../../../../SDKs/Flutter/.pub-cache/hosted/pub.dartlang.org/path-1.6.2/lib" />
       <root url="file://$PROJECT_DIR$/../../../../SDKs/Flutter/.pub-cache/hosted/pub.dartlang.org/sqflite-0.11.1/lib" />
       <root url="file://$PROJECT_DIR$/../../../../SDKs/Flutter/.pub-cache/hosted/pub.dartlang.org/synchronized-1.5.1+1/lib" />
       <root url="file://$PROJECT_DIR$/../../../../SDKs/Flutter/.pub-cache/hosted/pub.dartlang.org/typed_data-1.1.5/lib" />
+      <root url="file://$PROJECT_DIR$/../../../../SDKs/Flutter/.pub-cache/hosted/pub.dartlang.org/typed_data-1.1.6/lib" />
       <root url="file://$PROJECT_DIR$/../../../../SDKs/Flutter/.pub-cache/hosted/pub.dartlang.org/vector_math-2.0.6/lib" />
+      <root url="file://$PROJECT_DIR$/../../../../SDKs/Flutter/.pub-cache/hosted/pub.dartlang.org/vector_math-2.0.8/lib" />
       <root url="file://$PROJECT_DIR$/../../../../SDKs/Flutter/bin/cache/pkg/sky_engine/lib" />
       <root url="file://$PROJECT_DIR$/../../../../SDKs/Flutter/packages/flutter/lib" />
     </CLASSES>
