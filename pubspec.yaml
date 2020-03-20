@@ -17,6 +17,9 @@ dependencies:
     sdk: flutter
 
   sqflite: any
+  idb_sqflite: any
+  database: any
+  indexed_db: any
 
   framework:
     path: ./framework
