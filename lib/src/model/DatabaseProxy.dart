@@ -84,21 +84,17 @@ class DatabaseProxy extends Proxy
 
 	Future init() async {
 		const databaseName = "app.db";
-		if (idbAvailable) {
+		final databasesPath = await getDatabasesPath();
+		String path = join(databasesPath, databaseName);
 
-		} else {
-			final databasesPath = await getDatabasesPath();
-			String path = join(databasesPath, databaseName);
-
-			print(">\t DatabaseProxy -> init > openDatabase: path = " + path);
-			_database = await openDatabase(path, version: 1,
-				onCreate: (db, int version) {
-					print(">\t DatabaseProxy -> init > database: onCreate");
-				},
-				onOpen: (db) {
-					print(">\t DatabaseProxy -> init > database: onOpen");
-				}
-			);
-		}
+		print(">\t DatabaseProxy -> init > openDatabase: path = " + path);
+		_database = await openDatabase(path, version: 1,
+			onCreate: (db, int version) {
+				print(">\t DatabaseProxy -> init > database: onCreate");
+			},
+			onOpen: (db) {
+				print(">\t DatabaseProxy -> init > database: onOpen");
+			}
+		);
 	}
 }

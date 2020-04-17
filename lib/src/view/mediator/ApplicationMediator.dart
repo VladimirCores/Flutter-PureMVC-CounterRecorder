@@ -11,26 +11,17 @@ class ApplicationMediator extends Mediator {
 
 	ApplicationMediator() : super( NAME );
 
-	@override
-	void onRegister() {
-		print(">\t ApplicationMediator -> onRegister");
-	}
+	@override void onRegister() { print(">\t ApplicationMediator -> onRegister"); }
+	@override void onRemove() { }
 
-	@override
-	void onRemove() {
-
-	}
-
-	@override
-	List<String> listNotificationInterests() {
+	@override List<String> listNotificationInterests() {
 		return [
 			ApplicationNotification.NAVIGATE_TO_PAGE
 		,	ApplicationNotification.NAVIGATE_TO_BACK
 		];
 	}
 
-	@override
-	void handleNotification( INotification note ) {
+	@override void handleNotification( INotification note ) {
 		print("> ApplicationMediator -> handleNotification: note.name = ${note.getName()}");
 		switch( note.getName() ) {
 			case ApplicationNotification.NAVIGATE_TO_BACK:

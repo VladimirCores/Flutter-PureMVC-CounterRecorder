@@ -37,13 +37,6 @@
             </list>
           </value>
         </entry>
-        <entry key="convert">
-          <value>
-            <list>
-              <option value="$PROJECT_DIR$/../../../../SDKs/Flutter/.pub-cache/hosted/pub.dartlang.org/convert-2.1.1/lib" />
-            </list>
-          </value>
-        </entry>
         <entry key="csslib">
           <value>
             <list>
@@ -61,7 +54,7 @@
         <entry key="database">
           <value>
             <list>
-              <option value="$PROJECT_DIR$/../../../../SDKs/Flutter/.pub-cache/hosted/pub.dartlang.org/database-0.3.2/lib" />
+              <option value="$PROJECT_DIR$/../../../../SDKs/Flutter/.pub-cache/hosted/pub.dartlang.org/database-0.3.3/lib" />
             </list>
           </value>
         </entry>
@@ -89,14 +82,14 @@
         <entry key="idb_shim">
           <value>
             <list>
-              <option value="$PROJECT_DIR$/../../../../SDKs/Flutter/.pub-cache/hosted/pub.dartlang.org/idb_shim-1.10.3+1/lib" />
+              <option value="$PROJECT_DIR$/../../../../SDKs/Flutter/.pub-cache/hosted/pub.dartlang.org/idb_shim-1.11.0/lib" />
             </list>
           </value>
         </entry>
         <entry key="idb_sqflite">
           <value>
             <list>
-              <option value="$PROJECT_DIR$/../../../../SDKs/Flutter/.pub-cache/hosted/pub.dartlang.org/idb_sqflite-0.2.0/lib" />
+              <option value="$PROJECT_DIR$/../../../../SDKs/Flutter/.pub-cache/hosted/pub.dartlang.org/idb_sqflite-0.3.0/lib" />
             </list>
           </value>
         </entry>
@@ -124,14 +117,7 @@
         <entry key="path">
           <value>
             <list>
-              <option value="$PROJECT_DIR$/../../../../SDKs/Flutter/.pub-cache/hosted/pub.dartlang.org/path-1.6.4/lib" />
-            </list>
-          </value>
-        </entry>
-        <entry key="petitparser">
-          <value>
-            <list>
-              <option value="$PROJECT_DIR$/../../../../SDKs/Flutter/.pub-cache/hosted/pub.dartlang.org/petitparser-3.0.1/lib" />
+              <option value="$PROJECT_DIR$/../../../../SDKs/Flutter/.pub-cache/hosted/pub.dartlang.org/path-1.7.0/lib" />
             </list>
           </value>
         </entry>
@@ -152,7 +138,7 @@
         <entry key="sembast">
           <value>
             <list>
-              <option value="$PROJECT_DIR$/../../../../SDKs/Flutter/.pub-cache/hosted/pub.dartlang.org/sembast-2.3.0/lib" />
+              <option value="$PROJECT_DIR$/../../../../SDKs/Flutter/.pub-cache/hosted/pub.dartlang.org/sembast-2.4.2/lib" />
             </list>
           </value>
         </entry>
@@ -215,7 +201,7 @@
         <entry key="universal_html">
           <value>
             <list>
-              <option value="$PROJECT_DIR$/../../../../SDKs/Flutter/.pub-cache/hosted/pub.dartlang.org/universal_html-1.1.20/lib" />
+              <option value="$PROJECT_DIR$/../../../../SDKs/Flutter/.pub-cache/hosted/pub.dartlang.org/universal_html-1.2.2/lib" />
             </list>
           </value>
         </entry>
@@ -230,13 +216,6 @@
           <value>
             <list>
               <option value="$PROJECT_DIR$/../../../../SDKs/Flutter/.pub-cache/hosted/pub.dartlang.org/vector_math-2.0.8/lib" />
-            </list>
-          </value>
-        </entry>
-        <entry key="xml">
-          <value>
-            <list>
-              <option value="$PROJECT_DIR$/../../../../SDKs/Flutter/.pub-cache/hosted/pub.dartlang.org/xml-3.7.0/lib" />
             </list>
           </value>
         </entry>
@@ -255,22 +234,20 @@
       <root url="file://$PROJECT_DIR$/../../../../SDKs/Flutter/.pub-cache/hosted/pub.dartlang.org/built_value-7.0.9/lib" />
       <root url="file://$PROJECT_DIR$/../../../../SDKs/Flutter/.pub-cache/hosted/pub.dartlang.org/charcode-1.1.3/lib" />
       <root url="file://$PROJECT_DIR$/../../../../SDKs/Flutter/.pub-cache/hosted/pub.dartlang.org/collection-1.14.11/lib" />
-      <root url="file://$PROJECT_DIR$/../../../../SDKs/Flutter/.pub-cache/hosted/pub.dartlang.org/convert-2.1.1/lib" />
       <root url="file://$PROJECT_DIR$/../../../../SDKs/Flutter/.pub-cache/hosted/pub.dartlang.org/csslib-0.16.1/lib" />
       <root url="file://$PROJECT_DIR$/../../../../SDKs/Flutter/.pub-cache/hosted/pub.dartlang.org/cupertino_icons-0.1.3/lib" />
-      <root url="file://$PROJECT_DIR$/../../../../SDKs/Flutter/.pub-cache/hosted/pub.dartlang.org/database-0.3.2/lib" />
+      <root url="file://$PROJECT_DIR$/../../../../SDKs/Flutter/.pub-cache/hosted/pub.dartlang.org/database-0.3.3/lib" />
       <root url="file://$PROJECT_DIR$/../../../../SDKs/Flutter/.pub-cache/hosted/pub.dartlang.org/fixnum-0.10.11/lib" />
       <root url="file://$PROJECT_DIR$/../../../../SDKs/Flutter/.pub-cache/hosted/pub.dartlang.org/html-0.14.0+3/lib" />
-      <root url="file://$PROJECT_DIR$/../../../../SDKs/Flutter/.pub-cache/hosted/pub.dartlang.org/idb_shim-1.10.3+1/lib" />
-      <root url="file://$PROJECT_DIR$/../../../../SDKs/Flutter/.pub-cache/hosted/pub.dartlang.org/idb_sqflite-0.2.0/lib" />
+      <root url="file://$PROJECT_DIR$/../../../../SDKs/Flutter/.pub-cache/hosted/pub.dartlang.org/idb_shim-1.11.0/lib" />
+      <root url="file://$PROJECT_DIR$/../../../../SDKs/Flutter/.pub-cache/hosted/pub.dartlang.org/idb_sqflite-0.3.0/lib" />
       <root url="file://$PROJECT_DIR$/../../../../SDKs/Flutter/.pub-cache/hosted/pub.dartlang.org/js-0.6.1+1/lib" />
       <root url="file://$PROJECT_DIR$/../../../../SDKs/Flutter/.pub-cache/hosted/pub.dartlang.org/matcher-0.12.6/lib" />
       <root url="file://$PROJECT_DIR$/../../../../SDKs/Flutter/.pub-cache/hosted/pub.dartlang.org/meta-1.1.8/lib" />
-      <root url="file://$PROJECT_DIR$/../../../../SDKs/Flutter/.pub-cache/hosted/pub.dartlang.org/path-1.6.4/lib" />
-      <root url="file://$PROJECT_DIR$/../../../../SDKs/Flutter/.pub-cache/hosted/pub.dartlang.org/petitparser-3.0.1/lib" />
+      <root url="file://$PROJECT_DIR$/../../../../SDKs/Flutter/.pub-cache/hosted/pub.dartlang.org/path-1.7.0/lib" />
       <root url="file://$PROJECT_DIR$/../../../../SDKs/Flutter/.pub-cache/hosted/pub.dartlang.org/protobuf-1.0.1/lib" />
       <root url="file://$PROJECT_DIR$/../../../../SDKs/Flutter/.pub-cache/hosted/pub.dartlang.org/quiver-2.1.3/lib" />
-      <root url="file://$PROJECT_DIR$/../../../../SDKs/Flutter/.pub-cache/hosted/pub.dartlang.org/sembast-2.3.0/lib" />
+      <root url="file://$PROJECT_DIR$/../../../../SDKs/Flutter/.pub-cache/hosted/pub.dartlang.org/sembast-2.4.2/lib" />
       <root url="file://$PROJECT_DIR$/../../../../SDKs/Flutter/.pub-cache/hosted/pub.dartlang.org/source_span-1.7.0/lib" />
       <root url="file://$PROJECT_DIR$/../../../../SDKs/Flutter/.pub-cache/hosted/pub.dartlang.org/sqflite-1.3.0/lib" />
       <root url="file://$PROJECT_DIR$/../../../../SDKs/Flutter/.pub-cache/hosted/pub.dartlang.org/sqflite_common-1.0.0+1/lib" />
@@ -278,10 +255,9 @@
       <root url="file://$PROJECT_DIR$/../../../../SDKs/Flutter/.pub-cache/hosted/pub.dartlang.org/synchronized-2.2.0/lib" />
       <root url="file://$PROJECT_DIR$/../../../../SDKs/Flutter/.pub-cache/hosted/pub.dartlang.org/term_glyph-1.1.0/lib" />
       <root url="file://$PROJECT_DIR$/../../../../SDKs/Flutter/.pub-cache/hosted/pub.dartlang.org/typed_data-1.1.6/lib" />
-      <root url="file://$PROJECT_DIR$/../../../../SDKs/Flutter/.pub-cache/hosted/pub.dartlang.org/universal_html-1.1.20/lib" />
+      <root url="file://$PROJECT_DIR$/../../../../SDKs/Flutter/.pub-cache/hosted/pub.dartlang.org/universal_html-1.2.2/lib" />
       <root url="file://$PROJECT_DIR$/../../../../SDKs/Flutter/.pub-cache/hosted/pub.dartlang.org/universal_io-1.0.1/lib" />
       <root url="file://$PROJECT_DIR$/../../../../SDKs/Flutter/.pub-cache/hosted/pub.dartlang.org/vector_math-2.0.8/lib" />
-      <root url="file://$PROJECT_DIR$/../../../../SDKs/Flutter/.pub-cache/hosted/pub.dartlang.org/xml-3.7.0/lib" />
       <root url="file://$PROJECT_DIR$/../../../../SDKs/Flutter/.pub-cache/hosted/pub.dartlang.org/zone_local-0.1.2/lib" />
       <root url="file://$PROJECT_DIR$/../../../../SDKs/Flutter/bin/cache/pkg/sky_engine/lib" />
       <root url="file://$PROJECT_DIR$/../../../../SDKs/Flutter/packages/flutter/lib" />

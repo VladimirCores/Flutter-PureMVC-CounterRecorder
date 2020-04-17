@@ -36,13 +36,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.14.11"
-  convert:
-    dependency: transitive
-    description:
-      name: convert
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "2.1.1"
   csslib:
     dependency: transitive
     description:
@@ -63,7 +56,7 @@ packages:
       name: database
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.3.2"
+    version: "0.3.3"
   fixnum:
     dependency: transitive
     description:
@@ -96,14 +89,14 @@ packages:
       name: idb_shim
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.10.3+1"
+    version: "1.11.0"
   idb_sqflite:
     dependency: "direct main"
     description:
       name: idb_sqflite
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.2.0"
+    version: "0.3.0"
   js:
     dependency: transitive
     description:
@@ -131,14 +124,7 @@ packages:
       name: path
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.6.4"
-  petitparser:
-    dependency: transitive
-    description:
-      name: petitparser
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "3.0.1"
+    version: "1.7.0"
   protobuf:
     dependency: transitive
     description:
@@ -159,7 +145,7 @@ packages:
       name: sembast
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "2.3.0"
+    version: "2.4.2"
   sky_engine:
     dependency: transitive
     description: flutter
@@ -220,7 +206,7 @@ packages:
       name: universal_html
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.1.20"
+    version: "1.2.2"
   universal_io:
     dependency: transitive
     description:
@@ -235,13 +221,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.0.8"
-  xml:
-    dependency: transitive
-    description:
-      name: xml
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "3.7.0"
   zone_local:
     dependency: transitive
     description:

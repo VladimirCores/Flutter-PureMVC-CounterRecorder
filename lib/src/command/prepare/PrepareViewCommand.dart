@@ -18,26 +18,26 @@ class PrepareViewCommand extends SimpleCommand {
     final HomePageMediator homeScreenMediator = HomePageMediator();
     final HistoryPageMediator historyScreenMediator = HistoryPageMediator();
 
-    final HomePage homeScreen = HomePage( title: 'Counter Recorder' );
-    final LoginScreen loginScreen = LoginScreen();
-    final HistoryPage historyScreen = HistoryPage( title: 'History' );
+    final HomePage homePage = HomePage( title: 'Counter Recorder' );
+    final LoginScreen loginPage = LoginScreen();
+    final HistoryPage historyPAge = HistoryPage( title: 'History' );
 
     final Application application = new Application(
       observers: <NavigatorObserver>[
-      	homeScreen.routeObserver
-	    , historyScreen.routeObserver
+      	homePage.routeObserver
+	    , historyPAge.routeObserver
       ],
 		  routes: {
-			  Routes.HOME_SCREEN: ( BuildContext context ) => homeScreen,
-			  Routes.LOGIN_SCREEN: ( BuildContext context ) => loginScreen,
-			  Routes.HISTORY_SCREEN: ( BuildContext context ) => historyScreen,
+			  Routes.HOME_SCREEN: ( BuildContext context ) => homePage,
+			  Routes.LOGIN_SCREEN: ( BuildContext context ) => loginPage,
+			  Routes.HISTORY_SCREEN: ( BuildContext context ) => historyPAge,
 		  },
 		  initialRoute: Routes.HOME_SCREEN
 	  );
 
     applicationMediator.setViewComponent( application );
-    homeScreenMediator.setViewComponent( homeScreen );
-    historyScreenMediator.setViewComponent( historyScreen );
+    homeScreenMediator.setViewComponent( homePage );
+    historyScreenMediator.setViewComponent( historyPAge );
 
     facade.registerMediator( applicationMediator );
     facade.registerMediator( homeScreenMediator );

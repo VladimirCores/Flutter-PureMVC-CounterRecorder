@@ -19,26 +19,23 @@ class HomePageMediator extends Mediator
 	@override
 	void onRegister() {
 		print("> HomePageMediator -> onRegister");
-		_homeScreen.onIncrementButtonPressed.listen((time) {
+		_homePage.onIncrementButtonPressed.listen((time) {
 			print("> HomePageMediator -> onIncrementButtonPressed");
 			sendNotification( CounterCommand.INCREMENT );
 			sendNotification( HistoryCommand.SAVE_COUNTER_HISTORY, CounterHistoryAction.INCREMENT );
 		});
-		_homeScreen.onDecrementButtonPressed.listen((time) {
+		_homePage.onDecrementButtonPressed.listen((time) {
 			print("> HomePageMediator -> onDecrementButtonPressed");
 			sendNotification( CounterCommand.DECREMENT );
 			sendNotification( HistoryCommand.SAVE_COUNTER_HISTORY, CounterHistoryAction.DECREMENT );
 		});
-		_homeScreen.onNavigateHistoryButtonPressed.listen((context) {
+		_homePage.onNavigateHistoryButtonPressed.listen((context) {
 			print("> HomePageMediator -> onNavigateHistoryButtonPressed");
 			sendNotification( ApplicationNotification.NAVIGATE_TO_PAGE, context, Routes.HISTORY_SCREEN );
 		});
 	}
 
-	@override
-	void onRemove() {
-
-	}
+	@override void onRemove() { }
 
 	@override
   List<String> listNotificationInterests() {
@@ -54,9 +51,9 @@ class HomePageMediator extends Mediator
 		switch( note.getName() ) {
 			case CounterNotification.COUNTER_VALUE_UPDATED:
 				CounterVO valueVO = note.getBody();
-				_homeScreen.state.setCounter( valueVO.value );
+				_homePage.state.setCounter( valueVO.value );
 		}
   }
 
-	HomePage get _homeScreen => getViewComponent() as HomePage;
+	HomePage get _homePage => getViewComponent() as HomePage;
 }
