@@ -6,11 +6,19 @@
   <component name="ChangeListManager">
     <list default="true" id="696619da-8168-4697-9046-b50407b6ce6b" name="Default" comment="Reusing UPDATE command when increase and decrease counter value. Update in pubspec with sdk version &lt;3.0.0">
       <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/command/Command.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/Commands.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/command/prepare/PrepareControllerCommand.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/command/prepare/PrepareControllerCommand.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/command/prepare/PrepareModelCommand.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/command/prepare/PrepareModelCommand.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/command/prepare/PrepareViewCommand.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/command/prepare/PrepareViewCommand.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/view/mediator/pages/HistoryPageMediator.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/view/mediator/pages/HistoryPageMediator.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/Commands.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/controller/Commands.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/command/ReadyCommand.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/controller/commands/ReadyCommand.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/command/StartupCommand.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/controller/commands/StartupCommand.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/command/counter/DecrementCounterCommand.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/controller/commands/counter/DecrementCounterCommand.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/command/counter/IncrementCounterCommand.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/controller/commands/counter/IncrementCounterCommand.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/command/counter/UpdateCounterCommand.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/controller/commands/counter/UpdateCounterCommand.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/command/history/DeleteCounterHistoryCommand.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/controller/commands/history/DeleteCounterHistoryCommand.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/command/history/RevertCounterHistoryCommand.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/controller/commands/history/RevertCounterHistoryCommand.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/command/history/SaveCounterHistoryCommand.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/controller/commands/history/SaveCounterHistoryCommand.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/command/prepare/PrepareCompleteCommand.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/controller/commands/prepare/PrepareCompleteCommand.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/command/prepare/PrepareControllerCommand.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/controller/commands/prepare/PrepareControllerCommand.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/command/prepare/PrepareModelCommand.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/controller/commands/prepare/PrepareModelCommand.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/command/prepare/PrepareViewCommand.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/controller/commands/prepare/PrepareViewCommand.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,6 +204,8 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib/src/controller" />
+      <recent name="$PROJECT_DIR$/lib/src/controller/commands" />
       <recent name="$PROJECT_DIR$/lib/src" />
     </key>
   </component>

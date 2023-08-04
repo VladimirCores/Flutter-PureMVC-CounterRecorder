@@ -1,7 +1,7 @@
 import 'package:framework/framework.dart';
 import 'package:puremvc_counter_recorder_sample/consts/commands/CounterCommand.dart';
 import 'package:puremvc_counter_recorder_sample/consts/commands/HistoryCommand.dart';
-import 'package:puremvc_counter_recorder_sample/src/Commands.dart';
+import 'package:puremvc_counter_recorder_sample/src/controller/Commands.dart';
 
 class PrepareControllerCommand extends SimpleCommand {
   @override
