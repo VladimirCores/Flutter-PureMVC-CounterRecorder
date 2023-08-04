@@ -1,10 +1,10 @@
+import 'package:framework/framework.dart';
 import 'package:puremvc_counter_recorder_sample/consts/commands/HistoryCommand.dart';
 import 'package:puremvc_counter_recorder_sample/consts/notification/ApplicationNotification.dart';
 import 'package:puremvc_counter_recorder_sample/consts/notification/HistoryNotification.dart';
 import 'package:puremvc_counter_recorder_sample/src/model/HistoryProxy.dart';
 import 'package:puremvc_counter_recorder_sample/src/view/components/pages/HistoryPage.dart';
 import 'package:puremvc_counter_recorder_sample/src/view/components/pages/widgets/PageWidget.dart';
-import 'package:framework/framework.dart';
 
 class HistoryPageMediator extends Mediator {
   static const String NAME = "HistoryPageMediator";
@@ -40,7 +40,9 @@ class HistoryPageMediator extends Mediator {
 
   @override
   List<String> listNotificationInterests() {
-    return [HistoryNotification.HISTORY_UPDATED];
+    return [
+      HistoryNotification.HISTORY_UPDATED,
+    ];
   }
 
   @override

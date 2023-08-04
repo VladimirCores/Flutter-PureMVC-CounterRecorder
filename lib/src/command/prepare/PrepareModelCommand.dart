@@ -23,7 +23,7 @@ class PrepareModelCommand extends AsyncCommand {
 
     await databaseProxy.init();
     await databaseProxy.createDatabase(CounterVO, CounterVO.databaseObjectDescription());
-    await databaseProxy.deleteDatabase(HistoryVO);
+    // await databaseProxy.deleteDatabase(HistoryVO);
     await databaseProxy.createDatabase(HistoryVO, HistoryVO.databaseObjectDescription());
 
     commandComplete();

@@ -5,68 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="696619da-8168-4697-9046-b50407b6ce6b" name="Default" comment="Reusing UPDATE command when increase and decrease counter value. Update in pubspec with sdk version &lt;3.0.0">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.metadata" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/counter_recorder.iml" beforeDir="false" afterPath="$PROJECT_DIR$/flutter_puremvc_counterrecorder.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/counter_recorder_android.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/framework/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/lib/src/core/Controller.dart" beforeDir="false" afterPath="$PROJECT_DIR$/framework/lib/src/core/Controller.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/lib/src/core/Model.dart" beforeDir="false" afterPath="$PROJECT_DIR$/framework/lib/src/core/Model.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/lib/src/core/View.dart" beforeDir="false" afterPath="$PROJECT_DIR$/framework/lib/src/core/View.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/lib/src/inject/Injector.dart" beforeDir="false" afterPath="$PROJECT_DIR$/framework/lib/src/inject/Injector.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/lib/src/inject/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/framework/lib/src/inject/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/lib/src/interfaces/IController.dart" beforeDir="false" afterPath="$PROJECT_DIR$/framework/lib/src/interfaces/IController.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/lib/src/interfaces/IFacade.dart" beforeDir="false" afterPath="$PROJECT_DIR$/framework/lib/src/interfaces/IFacade.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/lib/src/interfaces/INotification.dart" beforeDir="false" afterPath="$PROJECT_DIR$/framework/lib/src/interfaces/INotification.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/lib/src/interfaces/INotifier.dart" beforeDir="false" afterPath="$PROJECT_DIR$/framework/lib/src/interfaces/INotifier.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/lib/src/interfaces/IObserver.dart" beforeDir="false" afterPath="$PROJECT_DIR$/framework/lib/src/interfaces/IObserver.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/lib/src/patterns/command/AsyncMacroCommand.dart" beforeDir="false" afterPath="$PROJECT_DIR$/framework/lib/src/patterns/command/AsyncMacroCommand.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/lib/src/patterns/command/AsyncSimpleCommand.dart" beforeDir="false" afterPath="$PROJECT_DIR$/framework/lib/src/patterns/command/AsyncSimpleCommand.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/lib/src/patterns/command/MacroCommand.dart" beforeDir="false" afterPath="$PROJECT_DIR$/framework/lib/src/patterns/command/MacroCommand.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/lib/src/patterns/facade/Facade.dart" beforeDir="false" afterPath="$PROJECT_DIR$/framework/lib/src/patterns/facade/Facade.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/lib/src/patterns/mediator/Mediator.dart" beforeDir="false" afterPath="$PROJECT_DIR$/framework/lib/src/patterns/mediator/Mediator.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/lib/src/patterns/observer/Notification.dart" beforeDir="false" afterPath="$PROJECT_DIR$/framework/lib/src/patterns/observer/Notification.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/lib/src/patterns/observer/Notifier.dart" beforeDir="false" afterPath="$PROJECT_DIR$/framework/lib/src/patterns/observer/Notifier.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/lib/src/patterns/observer/Observer.dart" beforeDir="false" afterPath="$PROJECT_DIR$/framework/lib/src/patterns/observer/Observer.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/lib/src/patterns/proxy/Proxy.dart" beforeDir="false" afterPath="$PROJECT_DIR$/framework/lib/src/patterns/proxy/Proxy.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/framework/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/framework/pubspec.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/consts/notification/CounterNotification.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/consts/notification/CounterNotification.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/generated/i18n.dart" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/ApplicationFacade.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/ApplicationFacade.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/command/Command.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/command/Command.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/command/ReadyCommand.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/command/ReadyCommand.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/command/StartupCommand.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/command/StartupCommand.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/command/counter/DecrementCounterCommand.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/command/counter/DecrementCounterCommand.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/command/counter/IncrementCounterCommand.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/command/counter/IncrementCounterCommand.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/command/counter/UpdateCounterCommand.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/command/counter/UpdateCounterCommand.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/command/history/DeleteCounterHistoryCommand.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/command/history/DeleteCounterHistoryCommand.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/command/history/RevertCounterHistoryCommand.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/command/history/RevertCounterHistoryCommand.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/command/history/SaveCounterHistoryCommand.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/command/history/SaveCounterHistoryCommand.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/command/prepare/PrepareCompleteCommand.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/command/prepare/PrepareCompleteCommand.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/command/Command.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/Commands.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/src/command/prepare/PrepareControllerCommand.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/command/prepare/PrepareControllerCommand.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/src/command/prepare/PrepareModelCommand.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/command/prepare/PrepareModelCommand.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/src/command/prepare/PrepareViewCommand.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/command/prepare/PrepareViewCommand.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/model/CounterProxy.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/model/CounterProxy.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/model/DatabaseProxy.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/model/DatabaseProxy.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/model/HistoryProxy.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/model/HistoryProxy.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/model/vos/CounterVO.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/model/vos/CounterVO.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/model/vos/HistoryVO.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/model/vos/HistoryVO.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/view/components/Application.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/view/components/Application.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/view/components/pages/HistoryPage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/view/components/pages/HistoryPage.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/view/components/pages/HomePage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/view/components/pages/HomePage.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/view/components/pages/LoginPage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/view/components/pages/LoginPage.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/view/components/pages/widgets/PageWidget.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/view/components/pages/widgets/PageWidget.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/view/mediator/ApplicationMediator.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/view/mediator/ApplicationMediator.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/src/view/mediator/pages/HistoryPageMediator.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/view/mediator/pages/HistoryPageMediator.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/view/mediator/pages/HomePageMediator.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/view/mediator/pages/HomePageMediator.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/widget_test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/test/widget_test.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/web/manifest.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -250,6 +194,9 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/lib" />
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib/src" />
     </key>
   </component>
   <component name="RunManager" selected="Flutter.main.dart">

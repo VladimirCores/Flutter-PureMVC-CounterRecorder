@@ -1,5 +1,5 @@
 import 'package:flutter/widgets.dart';
-import 'package:puremvc_counter_recorder_sample/src/command/Command.dart';
+import 'package:puremvc_counter_recorder_sample/src/Commands.dart';
 import 'package:puremvc_counter_recorder_sample/src/command/StartupCommand.dart';
 
 import 'src/ApplicationFacade.dart';
