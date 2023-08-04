@@ -41,9 +41,9 @@ class Notifier implements INotifier {
      * -  Param [body] - the body of the note (optional)
      * -  Param [type] - the type of the note (optional)
      */
-  void sendNotification(String noteName, [dynamic body, String type]) {
+  void sendNotification(String noteName, [dynamic body, String? type]) {
     if (facade != null) {
-      facade.sendNotification(noteName, body, type);
+      facade!.sendNotification(noteName, body, type);
     }
   }
 
@@ -66,14 +66,15 @@ class Notifier implements INotifier {
      *  -  Throws [MultitonErrorNotifierLacksKey] if no multitonKey is set. Usually means facade getter is being accessed before initializeNotifier has been called (i.e., from the constructor). Defer facade access until the onRegister method.
      */
   IFacade get facade {
-    if (_multitonKey == null) throw new MultitonErrorNotifierLacksKey();
-    return Facade.getInstance(_multitonKey);
+    if (_multitonKey == null) throw MultitonErrorNotifierLacksKey();
+    return Facade.getInstance(_multitonKey!)!;
   }
 
   // The Multiton Key for this app
-  String _multitonKey;
-  String getMultitonKey() { return _multitonKey; }
-
+  String? _multitonKey;
+  String? getMultitonKey() {
+    return _multitonKey;
+  }
 }
 
 class MultitonErrorNotifierLacksKey {

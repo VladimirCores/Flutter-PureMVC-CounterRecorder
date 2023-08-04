@@ -9,7 +9,7 @@ part of framework;
  *
  * -  Remembering which [ICommand]s are intended to handle which [INotification]s.
  * -  Registering itself as an [IObserver] with the [View] for each [INotification] that it has an [ICommand] mapping for.
- * -  Creating a new instance of the proper [ICommand] to handle a given [INotification] when notified by the [IView].
+ * -  Creating a instance of the proper [ICommand] to handle a given [INotification] when notified by the [IView].
  * -  Calling the [ICommand]'s [execute] method, passing in the [INotification].
  *
  * See [INotification], [ICommand]
@@ -24,10 +24,10 @@ class Controller implements IController {
    * -  Throws [MultitonErrorControllerExists] if instance for this Multiton key has already been constructed
    */
   Controller(String key) {
-    if (instanceMap[key] != null) throw new MultitonErrorControllerExists();
+    if (instanceMap.containsKey(key)) throw MultitonErrorControllerExists();
     multitonKey = key;
     instanceMap[multitonKey] = this;
-    commandMap = new Map<String, Function>();
+    commandMap = Map<String, Function>();
     initializeController();
   }
 
@@ -41,7 +41,7 @@ class Controller implements IController {
    * setting [view] equal to the return value of a call to [getInstance] on your [IView] implementor.
    */
   void initializeController() {
-    view = View.getInstance(multitonKey);
+    view = View.getInstance(multitonKey)!;
   }
 
   /**
@@ -49,11 +49,13 @@ class Controller implements IController {
    *
    * -  Returns the [IController] Multiton instance for the specified key
    */
-  static IController getInstance(String key) {
+  static IController? getInstance(String? key) {
     if (key == null || key == "") return null;
-    if (instanceMap == null) instanceMap = new Map<String, IController>();
-    if (instanceMap[key] == null) instanceMap[key] = new Controller(key);
-    return instanceMap[key];
+    if (instanceMap.containsKey(key))
+      return instanceMap[key];
+    else {
+      return instanceMap[key] = Controller(key);
+    }
   }
 
   /**
@@ -63,7 +65,8 @@ class Controller implements IController {
    * -  Param [note] - the [INotification] to execute the associated [ICommand] for
    */
   void executeCommand(INotification note) {
-    Function commandFactory = commandMap[note.getName()];
+    final noteName = note.getName();
+    Function? commandFactory = commandMap[noteName];
     if (commandFactory == null) return;
 
     ICommand commandInstance = commandFactory();
@@ -75,11 +78,11 @@ class Controller implements IController {
    * Register an [INotification] to [ICommand] mapping with the [Controller].
    *
    * -  Param [noteName] - the name of the [INotification] to associate the [ICommand] with.
-   * -  Param [commandFactory] - a function that creates a new instance of the [ICommand].
+   * -  Param [commandFactory] - a function that creates a instance of the [ICommand].
    */
   void registerCommand(String noteName, Function commandFactory) {
     if (commandMap[noteName] == null) {
-      view.registerObserver(noteName, new Observer(executeCommand, this));
+      view.registerObserver(noteName, Observer(executeCommand, this));
     }
     commandMap[noteName] = commandFactory;
   }
@@ -106,7 +109,7 @@ class Controller implements IController {
       view.removeObserver(noteName, this);
 
       // remove the command
-      commandMap[noteName] = null;
+      commandMap.remove(noteName);
     }
   }
 
@@ -116,20 +119,20 @@ class Controller implements IController {
    * -  Param [key] multitonKey of the [IController] instance to remove
    */
   static void removeController(String key) {
-    instanceMap[key] = null;
+    instanceMap.remove(key);
   }
 
   // Local reference to this core's IView
-  IView view;
+  late IView view;
 
   // Mapping of Notification names to Command Class references
-  Map<String, Function> commandMap;
+  late Map<String, Function?> commandMap;
 
   // The Multiton Key for this Core
-  String multitonKey;
+  late String multitonKey;
 
   // Multiton instance map
-  static Map<String, IController> instanceMap;
+  static Map<String, IController> instanceMap = Map<String, IController>();
 }
 
 class MultitonErrorControllerExists {

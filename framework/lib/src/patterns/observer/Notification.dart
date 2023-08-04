@@ -27,7 +27,7 @@ class Notification implements INotification {
      * -  Param [body] - the [INotification] body. (optional)
      * -  Param [type] - the type of the [INotification] (optional)
      */
-  Notification(String this.name, [dynamic this.body, String this.type]) {}
+  Notification(String this.name, [dynamic this.body, this.type]) {}
 
   /**
      * Get the [name] of the [INotification].
@@ -61,7 +61,7 @@ class Notification implements INotification {
      *
      * -  Param [type] - the type of the [INotification].
      */
-  void setType(String noteType) {
+  void setType(String? noteType) {
     type = noteType;
   }
 
@@ -70,7 +70,7 @@ class Notification implements INotification {
      *
      * -  Returns [String] - the type of the [INotification].
      */
-  String getType() {
+  String? getType() {
     return type;
   }
 
@@ -82,7 +82,7 @@ class Notification implements INotification {
   /**
      * This [INotifications]'s [type]
      */
-  String type;
+  String? type;
 
   /**
      * This [INotifications]'s [body]

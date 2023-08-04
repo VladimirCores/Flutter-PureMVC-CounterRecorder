@@ -22,7 +22,7 @@ class MacroCommand extends Notifier implements ICommand {
    * method.
    */
   MacroCommand() {
-    subCommands = new List<Function>();
+    subCommands = List<Function>.empty(growable: true);
     initializeMacroCommand();
   }
 
@@ -57,11 +57,11 @@ class MacroCommand extends Notifier implements ICommand {
   void execute(INotification note) {
     for (Function commandFactory in subCommands) {
       ICommand commandInstance = commandFactory();
-      commandInstance.initializeNotifier(_multitonKey);
+      commandInstance.initializeNotifier(_multitonKey!);
       commandInstance.execute(note);
     }
   }
 
   // This [MacroCommand]'s 'SubCommands'
-  List<Function> subCommands;
+  late List<Function> subCommands;
 }

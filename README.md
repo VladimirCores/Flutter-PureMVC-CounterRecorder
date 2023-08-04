@@ -1,5 +1,5 @@
 # Flutter-PureMVC-CounterRecorder
-Sample project using together greatest framework PureMVC and Flutter with peristent SQLite storage abstraction.
+Sample project using together greatest framework PureMVC and Flutter with persistent SQLite storage abstraction.
 
 ## Getting Started
 1. Import framework project as module in IDEA

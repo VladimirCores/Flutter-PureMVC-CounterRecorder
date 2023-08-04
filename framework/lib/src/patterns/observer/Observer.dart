@@ -34,7 +34,7 @@ class Observer implements IObserver {
   /**
    * This [IObserver]'s [notifyContext] (i.e., caller)
    */
-  Object notifyContext;
+  final Object? notifyContext;
 
   /**
    * Constructor.
@@ -45,7 +45,7 @@ class Observer implements IObserver {
    * Param [notifyMethod] the callback method
    * Param [notifyContext] the caller object
    */
-  Observer(Function this.notifyMethod, [Object this.notifyContext]) {}
+  Observer(Function this.notifyMethod, [this.notifyContext]) {}
 
   /**
    * Set the notification method.
@@ -63,7 +63,7 @@ class Observer implements IObserver {
    *
    * -  Param [caller] - a reference to the object to be notified.
    */
-  void setNotifyContext(Object caller) {
+  void setNotifyContext(Object? caller) {
     notifyContext = caller;
   }
 
@@ -81,7 +81,7 @@ class Observer implements IObserver {
    *
    * -  Returns [Object] - the caller.
    */
-  Object getNotifyContext() {
+  Object? getNotifyContext() {
     return notifyContext;
   }
 
@@ -102,5 +102,10 @@ class Observer implements IObserver {
    */
   bool compareNotifyContext(Object object) {
     return identical(object, notifyContext);
+  }
+
+  @override
+  set notifyContext(Object? caller) {
+    notifyContext = caller;
   }
 }

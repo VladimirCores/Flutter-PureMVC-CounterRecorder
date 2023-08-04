@@ -46,14 +46,14 @@ abstract class INotification {
      *
      * -  Param [type] - the type of the [INotification].
      */
-  void setType(String type);
+  void setType(String? type);
 
   /**
      * Get the [type] of the [INotification].
      *
      * -  Returns [String] - the type of the [INotification].
      */
-  String getType();
+  String? getType();
 
   /**
      * This [INotifications]'s [body]
@@ -70,6 +70,6 @@ abstract class INotification {
   /**
      * This [INotifications]'s [type]
      */
-  void set type(String noteType);
-  String get type;
+  void set type(String? noteType);
+  String? get type;
 }

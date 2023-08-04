@@ -1,20 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="696619da-8168-4697-9046-b50407b6ce6b" name="Default" comment="Reusing UPDATE command when increase and decrease counter value. Update in pubspec with sdk version &lt;3.0.0">
-      <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/counter_recorder.iml" beforeDir="false" afterPath="$PROJECT_DIR$/flutter_puremvc_counterrecorder.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/counter_recorder_android.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/framework/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/lib/src/core/Controller.dart" beforeDir="false" afterPath="$PROJECT_DIR$/framework/lib/src/core/Controller.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/lib/src/core/Model.dart" beforeDir="false" afterPath="$PROJECT_DIR$/framework/lib/src/core/Model.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/lib/src/core/View.dart" beforeDir="false" afterPath="$PROJECT_DIR$/framework/lib/src/core/View.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/lib/src/inject/Injector.dart" beforeDir="false" afterPath="$PROJECT_DIR$/framework/lib/src/inject/Injector.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/lib/src/inject/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/framework/lib/src/inject/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/lib/src/interfaces/IController.dart" beforeDir="false" afterPath="$PROJECT_DIR$/framework/lib/src/interfaces/IController.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/lib/src/interfaces/IFacade.dart" beforeDir="false" afterPath="$PROJECT_DIR$/framework/lib/src/interfaces/IFacade.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/lib/src/interfaces/INotification.dart" beforeDir="false" afterPath="$PROJECT_DIR$/framework/lib/src/interfaces/INotification.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/lib/src/interfaces/INotifier.dart" beforeDir="false" afterPath="$PROJECT_DIR$/framework/lib/src/interfaces/INotifier.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/lib/src/interfaces/IObserver.dart" beforeDir="false" afterPath="$PROJECT_DIR$/framework/lib/src/interfaces/IObserver.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/lib/src/patterns/command/AsyncMacroCommand.dart" beforeDir="false" afterPath="$PROJECT_DIR$/framework/lib/src/patterns/command/AsyncMacroCommand.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/lib/src/patterns/command/AsyncSimpleCommand.dart" beforeDir="false" afterPath="$PROJECT_DIR$/framework/lib/src/patterns/command/AsyncSimpleCommand.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/lib/src/patterns/command/MacroCommand.dart" beforeDir="false" afterPath="$PROJECT_DIR$/framework/lib/src/patterns/command/MacroCommand.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/lib/src/patterns/facade/Facade.dart" beforeDir="false" afterPath="$PROJECT_DIR$/framework/lib/src/patterns/facade/Facade.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/lib/src/patterns/mediator/Mediator.dart" beforeDir="false" afterPath="$PROJECT_DIR$/framework/lib/src/patterns/mediator/Mediator.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/lib/src/patterns/observer/Notification.dart" beforeDir="false" afterPath="$PROJECT_DIR$/framework/lib/src/patterns/observer/Notification.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/lib/src/patterns/observer/Notifier.dart" beforeDir="false" afterPath="$PROJECT_DIR$/framework/lib/src/patterns/observer/Notifier.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/lib/src/patterns/observer/Observer.dart" beforeDir="false" afterPath="$PROJECT_DIR$/framework/lib/src/patterns/observer/Observer.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/lib/src/patterns/proxy/Proxy.dart" beforeDir="false" afterPath="$PROJECT_DIR$/framework/lib/src/patterns/proxy/Proxy.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/framework/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/framework/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/consts/notification/CounterNotification.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/consts/notification/CounterNotification.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/generated/i18n.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/ApplicationFacade.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/ApplicationFacade.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/command/Command.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/command/Command.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/command/ReadyCommand.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/command/ReadyCommand.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/command/StartupCommand.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/command/StartupCommand.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/command/counter/DecrementCounterCommand.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/command/counter/DecrementCounterCommand.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/command/counter/IncrementCounterCommand.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/command/counter/IncrementCounterCommand.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/command/counter/UpdateCounterCommand.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/command/counter/UpdateCounterCommand.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/command/history/DeleteCounterHistoryCommand.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/command/history/DeleteCounterHistoryCommand.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/command/history/RevertCounterHistoryCommand.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/command/history/RevertCounterHistoryCommand.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/command/history/SaveCounterHistoryCommand.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/command/history/SaveCounterHistoryCommand.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/command/prepare/PrepareCompleteCommand.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/command/prepare/PrepareCompleteCommand.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/command/prepare/PrepareControllerCommand.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/command/prepare/PrepareControllerCommand.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/command/prepare/PrepareModelCommand.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/command/prepare/PrepareModelCommand.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/src/command/prepare/PrepareViewCommand.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/command/prepare/PrepareViewCommand.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/model/CounterProxy.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/model/CounterProxy.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/src/model/DatabaseProxy.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/model/DatabaseProxy.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/model/HistoryProxy.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/model/HistoryProxy.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/model/vos/CounterVO.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/model/vos/CounterVO.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/model/vos/HistoryVO.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/model/vos/HistoryVO.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/view/components/Application.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/view/components/Application.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/view/components/pages/HistoryPage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/view/components/pages/HistoryPage.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/view/components/pages/HomePage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/view/components/pages/HomePage.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/view/components/pages/LoginPage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/view/components/pages/LoginPage.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/view/components/pages/widgets/PageWidget.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/view/components/pages/widgets/PageWidget.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/src/view/mediator/ApplicationMediator.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/view/mediator/ApplicationMediator.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/view/mediator/pages/HistoryPageMediator.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/view/mediator/pages/HistoryPageMediator.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/src/view/mediator/pages/HomePageMediator.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/view/mediator/pages/HomePageMediator.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/widget_test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/test/widget_test.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/web/manifest.json" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,118 +77,6 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_2_API_26" />
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/src/model/DatabaseProxy.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2040">
-              <caret line="85" column="34" selection-start-line="85" selection-start-column="34" selection-end-line="85" selection-end-column="34" />
-              <folding>
-                <element signature="e#0#20#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/main.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-              <folding>
-                <element signature="e#0#59#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lib/src/command/prepare/PrepareViewCommand.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="25" column="37" lean-forward="true" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/src/view/mediator/pages/HomePageMediator.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="21" column="54" lean-forward="true" selection-start-line="21" selection-start-column="54" selection-end-line="21" selection-end-column="54" />
-              <folding>
-                <element signature="e#0#53#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/src/view/components/pages/HomePage.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="24">
-              <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
-              <folding>
-                <element signature="e#0#20#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/src/ApplicationFacade.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pubspec.yaml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/android/app/src/main/java/com/example/counter_recorder/MainActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/src/command/prepare/PrepareModelCommand.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
-              <folding>
-                <element signature="e#0#66#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/src/view/mediator/ApplicationMediator.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="434">
-              <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
-              <folding>
-                <element signature="e#0#83#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>applied_metabolics</find>
@@ -198,12 +139,16 @@
       </list>
     </option>
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="1794" />
     <option name="y" value="53" />
     <option name="width" value="1920" />
     <option name="height" value="1027" />
   </component>
+  <component name="ProjectId" id="2TWjFIHHlH4ENVJ6P3gT1xSIVGl" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -284,50 +229,43 @@
       <pane id="Scope" />
     </panes>
   </component>
-  <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556139190163" />
-    <property name="dart.analysis.tool.window.force.activate" value="false" />
-    <property name="io.flutter.reload.alreadyRun" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.16015625" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="dart.settings" />
-    <property name="show.migrate.to.gradle.popup" value="false" />
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
   </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "cidr.known.project.marker": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "io.flutter.reload.alreadyRun": "true",
+    "last_opened_file_path": "/mnt/files/Projects/Study/PureMVC/flutter_puremvc_counterrecorder",
+    "settings.editor.selected.configurable": "editor.preferences.appearance",
+    "show.migrate.to.gradle.popup": "false"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/lib" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="JUnit" factoryName="JUnit">
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+  <component name="RunManager" selected="Flutter.main.dart">
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    <configuration name="web/index.html" type="DartWebdevConfigurationType" factoryName="Dart Web" temporary="true" nameIsGenerated="true">
+      <option name="htmlFilePath" value="$PROJECT_DIR$/web/index.html" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -341,7 +279,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Dart Web.web/index.html" />
+      </list>
+    </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -429,9 +373,7 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <default-breakpoints>
-        <breakpoint type="dart-exception">
-          <properties />
-        </breakpoint>
+        <breakpoint type="dart-exception" />
       </default-breakpoints>
     </breakpoint-manager>
   </component>

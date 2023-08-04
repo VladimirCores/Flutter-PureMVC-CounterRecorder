@@ -47,7 +47,7 @@ documentation and samples of using this package with `flutter` in the future.
 
 While technically, _yes_ (`package:inject` is framework and platform agnostic),
 the existing dependency injection framework in AngularDart is better suited for
-the idioms of that framework. We welcome experimentation and new ideas, though!
+the idioms of that framework. We welcome experimentation and ideas, though!
 
 ### Can I use this with server-side Dart?
 

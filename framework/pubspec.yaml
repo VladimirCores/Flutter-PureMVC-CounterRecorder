@@ -1,11 +1,10 @@
 name: framework
 description: Dart port of great framework - PureMVC with additional functionality.
 version: 0.0.1
-author:
 homepage:
 
 environment:
-  sdk: ">=2.0.0-dev.68.0 <3.0.0"
+  sdk: "^3.0.0"
 
 dependencies:
   flutter:

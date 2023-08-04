@@ -65,7 +65,7 @@ class Mediator extends Notifier implements IMediator {
    * -  Returns [List] - a [List] of the [INotification] names this [IMediator] has an interest in.
    */
   List<String> listNotificationInterests() {
-    return new List<String>();
+    return List<String>.empty(growable: true);
   }
 
   /**

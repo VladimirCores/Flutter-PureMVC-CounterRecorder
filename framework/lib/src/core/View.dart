@@ -24,11 +24,11 @@ class View implements IView {
    * -  Throws [MultitonErrorViewExists] if instance for this Multiton key has already been constructed
    */
   View(String key) {
-    if (instanceMap[key] != null) throw new MultitonErrorViewExists();
+    if (instanceMap.containsKey(key)) throw MultitonErrorViewExists();
     multitonKey = key;
     instanceMap[multitonKey] = this;
-    mediatorMap = new Map<String, IMediator>();
-    observerMap = new Map<String, List<IObserver>>();
+    mediatorMap = Map<String, IMediator>();
+    observerMap = Map<String, List<IObserver>>();
     initializeView();
   }
 
@@ -45,11 +45,13 @@ class View implements IView {
    *
    * -  Returns the [IView] Multiton instance for the specified key.
    */
-  static IView getInstance(String key) {
+  static IView? getInstance(String? key) {
     if (key == null || key == "") return null;
-    if (instanceMap == null) instanceMap = new Map<String, IView>();
-    if (instanceMap[key] == null) instanceMap[key] = new View(key);
-    return instanceMap[key];
+    if (instanceMap.containsKey(key))
+      return instanceMap[key];
+    else {
+      return instanceMap[key] = View(key);
+    }
   }
 
   /**
@@ -59,10 +61,10 @@ class View implements IView {
    * -  Param [observer] - the [IObserver] to register.
    */
   void registerObserver(String noteName, IObserver observer) {
-    if (observerMap[noteName] == null) {
-      observerMap[noteName] = new List<IObserver>();
-    }
-    observerMap[noteName].add(observer);
+    final hasObserversList = observerMap.containsKey(noteName);
+    var observers = hasObserversList ? observerMap[noteName] : List<IObserver>.empty(growable: true);
+    if (!hasObserversList) observerMap[noteName] = observers;
+    observers!.add(observer);
   }
 
   /**
@@ -76,20 +78,17 @@ class View implements IView {
    */
   void notifyObservers(INotification note) {
     // Get a reference to the observers list for this notification name
-    List<IObserver> observers_ref = observerMap[note.getName()];
-    if (observers_ref != null) {
+    final noteName = note.getName();
+    final hasObserversList = observerMap.containsKey(noteName);
+    if (hasObserversList) {
+      final observers_ref = observerMap[noteName]!;
       // Copy observers from reference array to working array,
       // since the reference array may change during the notification loop
-      List<IObserver> observers = new List<IObserver>();
+      List<IObserver> observersCopy = List<IObserver>.from(observers_ref);
       IObserver observer;
-      for (var i = 0; i < observers_ref.length; i++) {
-        observer = observers_ref[i];
-        observers.add(observer);
-      }
-
       // Notify Observers from the working array
-      for (var i = 0; i < observers.length; i++) {
-        observer = observers[i];
+      for (var i = 0; i < observersCopy.length; i++) {
+        observer = observersCopy[i];
         observer.notifyObserver(note);
       }
     }
@@ -102,15 +101,17 @@ class View implements IView {
    * -  Param [notifyContext] - remove [IObserver]s with this object as the [notifyContext].
    */
   void removeObserver(String noteName, Object notifyContext) {
+    if (!observerMap.containsKey(noteName)) return;
     // the observer list for the notification under inspection
-    List<IObserver> observers = observerMap[noteName];
-
+    List<IObserver> observers = observerMap[noteName]!;
+    IObserver observer;
     // find the observer for the notifyContext
     for (var i = 0; i < observers.length; i++) {
-      if (observers[i].compareNotifyContext(notifyContext) == true) {
+      observer = observers[i];
+      if (observer.compareNotifyContext(notifyContext) == true) {
         // there can only be one Observer for a given notifyContext
         // in any given Observer list, so remove it and break
-        observers.remove(observers[i]);
+        observers.remove(observer);
         break;
       }
     }
@@ -118,7 +119,7 @@ class View implements IView {
     // Also, when a Notification's Observer list length falls to
     // zero, delete the notification key from the observer map
     if (observers.length == 0) {
-      observerMap[noteName] = null;
+      observerMap.remove(noteName);
     }
   }
 
@@ -138,7 +139,7 @@ class View implements IView {
    */
   void registerMediator(IMediator mediator) {
     // do not allow re-registration (you must call removeMediator first)
-    if (mediatorMap[mediator.getName()] != null) return;
+    if (mediatorMap.containsKey(mediator.getName())) return;
 
     // Initialize with multiton key
     mediator.initializeNotifier(multitonKey);
@@ -152,7 +153,7 @@ class View implements IView {
     // Register Mediator as an observer for each notification of interests
     if (interests.length > 0) {
       // Create Observer referencing this mediator's handlNotification method
-      IObserver observer = new Observer(mediator.handleNotification, mediator);
+      IObserver observer = Observer(mediator.handleNotification, mediator);
 
       // Register Mediator as Observer for its list of Notification interests
       for (var i = 0; i < interests.length; i++) {
@@ -171,7 +172,7 @@ class View implements IView {
    * -  Returns [IMediator] - the [IMediator] instance previously registered in this core with the given [mediatorName].
    */
   IMediator retrieveMediator(String mediatorName) {
-    return mediatorMap[mediatorName];
+    return mediatorMap[mediatorName]!;
   }
 
   /**
@@ -182,23 +183,21 @@ class View implements IView {
    */
   IMediator removeMediator(String mediatorName) {
     // Retrieve the named mediator
-    IMediator mediator = mediatorMap[mediatorName];
+    IMediator mediator = mediatorMap[mediatorName]!;
 
-    if (mediator != null) {
-      // for every notification this mediator is interested in...
-      List<String> interests = mediator.listNotificationInterests();
-      for (var i = 0; i < interests.length; i++) {
-        // remove the observer linking the mediator
-        // to the notification interest
-        removeObserver(interests[i], mediator);
-      }
-
-      // remove the mediator from the map
-      mediatorMap[mediatorName] = null;
-
-      // alert the mediator that it has been removed
-      mediator.onRemove();
+    // for every notification this mediator is interested in...
+    List<String> interests = mediator.listNotificationInterests();
+    for (var i = 0; i < interests.length; i++) {
+      // remove the observer linking the mediator
+      // to the notification interest
+      removeObserver(interests[i], mediator);
     }
+
+    // remove the mediator from the map
+    mediatorMap.remove(mediatorName);
+
+    // alert the mediator that it has been removed
+    mediator.onRemove();
 
     return mediator;
   }
@@ -210,7 +209,7 @@ class View implements IView {
    * -  Returns [bool] - whether an [IMediator] is registered in this core with the given [mediatorName].
    */
   bool hasMediator(String mediatorName) {
-    return mediatorMap[mediatorName] != null;
+    return mediatorMap.containsKey(mediatorName);
   }
 
   /**
@@ -219,20 +218,20 @@ class View implements IView {
    * -  Param [key] - the Multiton key of [IView] instance to remove.
    */
   static void removeView(String key) {
-    instanceMap[key] = null;
+    instanceMap.remove(key);
   }
 
   // Mapping of IMediator names to IMediator instances
-  Map<String, IMediator> mediatorMap;
+  late Map<String, IMediator> mediatorMap;
 
   // Mapping of INotification names to IObserver lists
-  Map<String, List<IObserver>> observerMap;
+  late Map<String, List<IObserver>?> observerMap;
 
   // Multiton IView instance map
-  static Map<String, IView> instanceMap;
+  static Map<String, IView?> instanceMap = Map<String, IView?>();
 
   // The Multiton key for this Core
-  String multitonKey;
+  late String multitonKey;
 }
 
 class MultitonErrorViewExists {

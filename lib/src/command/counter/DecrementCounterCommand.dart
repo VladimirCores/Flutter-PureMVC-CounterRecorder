@@ -1,6 +1,6 @@
-import 'package:counter_recorder/consts/commands/CounterCommand.dart';
-import 'package:counter_recorder/src/model/CounterProxy.dart';
-import 'package:counter_recorder/src/model/vos/CounterVO.dart';
+import 'package:puremvc_counter_recorder_sample/consts/commands/CounterCommand.dart';
+import 'package:puremvc_counter_recorder_sample/src/model/CounterProxy.dart';
+import 'package:puremvc_counter_recorder_sample/src/model/vos/CounterVO.dart';
 import 'package:framework/framework.dart';
 
 class DecrementCounterCommand extends SimpleCommand {
@@ -8,7 +8,7 @@ class DecrementCounterCommand extends SimpleCommand {
 	void execute( INotification note ) async {
 		print("> DecrementCounterCommand > note: $note");
 
-		final CounterProxy counterProxy = facade.retrieveProxy( CounterProxy.NAME );
+		final counterProxy = facade.retrieveProxy( CounterProxy.NAME ) as CounterProxy;
 		final CounterVO counterVO = counterProxy.getData();
 
 		if (counterVO.value > 0)

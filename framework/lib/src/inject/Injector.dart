@@ -174,7 +174,7 @@ class Asynchronous {
 /// }
 ///
 /// main() async {
-///   var coffeeShop = await CoffeeShop.create(new DripCoffeeModule());
+///   var coffeeShop = await CoffeeShop.create(DripCoffeeModule());
 ///   print(coffeeShop.coffeeMaker.brewCoffee());
 /// }
 /// ```

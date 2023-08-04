@@ -1,11 +1,11 @@
 {
-    "name": "counter_recorder",
-    "short_name": "counter_recorder",
+    "name": "puremvc_counter_recorder_sample",
+    "short_name": "puremvc_counter_recorder_sample",
     "start_url": ".",
     "display": "minimal-ui",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "A Flutter project.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

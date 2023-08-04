@@ -3,8 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/framework/Framework.iml" filepath="$PROJECT_DIR$/framework/Framework.iml" />
-      <module fileurl="file://$PROJECT_DIR$/counter_recorder.iml" filepath="$PROJECT_DIR$/counter_recorder.iml" />
       <module fileurl="file://$PROJECT_DIR$/counter_recorder_android.iml" filepath="$PROJECT_DIR$/counter_recorder_android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flutter_puremvc_counterrecorder.iml" filepath="$PROJECT_DIR$/flutter_puremvc_counterrecorder.iml" />
     </modules>
   </component>
 </project>

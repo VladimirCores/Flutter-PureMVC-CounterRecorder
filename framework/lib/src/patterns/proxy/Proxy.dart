@@ -24,7 +24,7 @@ class Proxy extends Notifier implements IProxy {
      * -  Param [name] - the [name] this [IProxy] will be registered with.
      * -  Param [data] - the Data Object (optional)
      */
-  Proxy(String this.name, [dynamic this.data]) {}
+  Proxy(this.name, [dynamic this.data]) {}
 
   /**
      * Get the [IProxy] [name].

@@ -29,10 +29,10 @@ class Model implements IModel {
    * -  Throws [MultitonErrorModelExists] if instance for this Multiton key instance has already been constructed.
    */
   Model(String key) {
-    if (instanceMap[key] != null) throw new MultitonErrorModelExists();
+    if (instanceMap.containsKey(key)) throw MultitonErrorModelExists();
     multitonKey = key;
     instanceMap[multitonKey] = this;
-    proxyMap = new Map<String, IProxy>();
+    proxyMap = Map<String, IProxy>();
     initializeModel();
   }
 
@@ -49,11 +49,12 @@ class Model implements IModel {
    *
    * -  Returns the [IModel] Multiton instance for the specified key.
    */
-  static IModel getInstance(String key) {
+  static IModel? getInstance(String? key) {
     if (key == null || key == "") return null;
-    if (instanceMap == null) instanceMap = new Map<String, IModel>();
-    if (instanceMap[key] == null) instanceMap[key] = new Model(key);
-    return instanceMap[key];
+    if (instanceMap.containsKey(key))
+      return instanceMap[key];
+    else
+      return instanceMap[key] = Model(key);
   }
 
   /**
@@ -75,7 +76,7 @@ class Model implements IModel {
    * -  Returns the [IProxy] instance previously registered with the given [proxyName].
    */
   IProxy retrieveProxy(String proxyName) {
-    return proxyMap[proxyName];
+    return proxyMap[proxyName]!;
   }
 
   /**
@@ -85,11 +86,9 @@ class Model implements IModel {
    * -  Returns [IProxy] - the [IProxy] that was removed from the [IModel].
    */
   IProxy removeProxy(String proxyName) {
-    IProxy proxy = proxyMap[proxyName];
-    if (proxy != null) {
-      proxyMap[proxyName] = null;
-      proxy.onRemove();
-    }
+    IProxy proxy = proxyMap[proxyName]!;
+    proxyMap.remove(proxyName);
+    proxy.onRemove();
     return proxy;
   }
 
@@ -100,7 +99,7 @@ class Model implements IModel {
    * -  Returns [bool] - whether an [IProxy] is currently registered with the given [proxyName].
    */
   bool hasProxy(String proxyName) {
-    return proxyMap[proxyName] != null;
+    return proxyMap.containsKey(proxyName);
   }
 
   /**
@@ -109,17 +108,17 @@ class Model implements IModel {
    * -  Param [key] - the multitonKey of [IModel] instance to remove
    */
   static void removeModel(String key) {
-    instanceMap[key] = null;
+    instanceMap.remove(key);
   }
 
   // Mapping of proxyNames to IProxy instances
-  Map<String, IProxy> proxyMap;
+  late Map<String, IProxy> proxyMap;
 
   // Multiton instance map
-  static Map<String, IModel> instanceMap;
+  static Map<String, IModel> instanceMap = Map<String, IModel>();
 
   // The Multiton Key for this Core
-  String multitonKey;
+  late String multitonKey;
 }
 
 class MultitonErrorModelExists {

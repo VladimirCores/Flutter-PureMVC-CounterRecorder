@@ -40,7 +40,7 @@ abstract class IObserver {
      *
      * -  Param [caller] - a reference to the object to be notified.
      */
-  void setNotifyContext(Object caller);
+  void setNotifyContext(Object? caller);
 
   /**
      * Get the notification method.
@@ -54,7 +54,7 @@ abstract class IObserver {
      *
      * -  Returns [Object] - the caller.
      */
-  Object getNotifyContext();
+  Object? getNotifyContext();
 
   /**
      * Compare a given object to the [notifyContext] (caller) object.
@@ -80,6 +80,6 @@ abstract class IObserver {
   /**
      * This [IObserver]'s [notifyContext] (i.e., caller)
      */
-  void set notifyContext(Object caller);
-  Object get notifyContext;
+  void set notifyContext(Object? caller);
+  Object? get notifyContext;
 }

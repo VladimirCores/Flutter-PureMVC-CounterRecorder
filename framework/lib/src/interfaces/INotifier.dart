@@ -30,7 +30,7 @@ abstract class INotifier {
    * -  Param [body] - the body of the note (optional)
    * -  Param [type] - the type of the note (optional)
    */
-  void sendNotification(String noteName, [dynamic body, String type]);
+  void sendNotification(String noteName, [dynamic body, String? type]);
 
   /**
    * Initialize this [INotifier] instance.
@@ -47,6 +47,6 @@ abstract class INotifier {
   /**
    * This INotifier's Multiton Key
    */
-  void set _multitonKey(String key);
-  String get _multitonKey;
+  void set _multitonKey(String? key);
+  String? get _multitonKey;
 }
