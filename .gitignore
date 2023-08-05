@@ -6,6 +6,7 @@ ios/
 .pubspec.lock
 .packages
 .pub/
+.idea/
 
 build/
 
