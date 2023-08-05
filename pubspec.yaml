@@ -10,17 +10,11 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
-  build_runner: ^2.4.0
-  build_web_compilers: ^4.0.0
-
 dependencies:
   flutter:
     sdk: flutter
 
   sqflite: any
-  idb_sqflite: any
-  idb_shim: any
-  database: any
 
   framework:
     path: ./framework
